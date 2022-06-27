@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#wget -q "--no-check-certificate" http://ipkinstall.ath.cx/ipk-install/PY3/ShootYourScreen/installer.sh -O - | /bin/sh
+#wget -q "--no-check-certificate" https://raw.githubusercontent.com/emil237/ShootYourScreen-Py3/main/ShootYourScreen-py3.sh -O - | /bin/sh
 
 version=0.2.1
 #############################################################
@@ -16,10 +16,10 @@ cd /tmp
 set -e
 echo "===> Downloading And Installing ShootYourScreen plugin Please Wait ......"
 echo
-wget "http://ipkinstall.ath.cx/ipk-install/PY3/ShootYourScreen/ShootYourScreen.tar.gz"
-tar -xzf ShootYourScreen.tar.gz -C /
+wget "https://raw.githubusercontent.com/emil237/ShootYourScreen-Py3/main/ShootYourScreen-py3.tar.gz"
+tar -xzf ShootYourScreen-py3.tar.gz -C /
 set +e
-rm -f ShootYourScreen.tar.gz
+rm -f ShootYourScreen-py3.tar.gz
 
 echo ""
 sync
